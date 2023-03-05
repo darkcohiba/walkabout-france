@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Menu, Transition } from '@headlessui/react'
 import { DotsVerticalIcon } from '@heroicons/react/outline'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
@@ -69,18 +70,18 @@ export default function Meeting({ meeting }) {
               <div className="py-1">
                 <Menu.Item>
                   {({ active }) => (
-                    <a
-                      href="#"
+                    <Link
+                      href={`/calendar/${meeting.id}`}
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm'
                       )}
                     >
                       Edit
-                    </a>
+                    </Link>
                   )}
                 </Menu.Item>
-                <Menu.Item>
+                {/* <Menu.Item>
                   {({ active }) => (
                     <a
                       href="#"
@@ -92,7 +93,7 @@ export default function Meeting({ meeting }) {
                       Cancel
                     </a>
                   )}
-                </Menu.Item>
+                </Menu.Item> */}
               </div>
             </Menu.Items>
           </Transition>

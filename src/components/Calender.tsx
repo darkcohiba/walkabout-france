@@ -24,8 +24,8 @@ const meetings = [
     name: 'Leslie Alexander',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    startDatetime: '2022-05-11T13:00',
-    endDatetime: '2022-05-11T14:30',
+    startDatetime: '2023-03-11T13:00',
+    endDatetime: '2023-03-11T14:30',
   },
   {
     id: 2,
@@ -40,24 +40,24 @@ const meetings = [
     name: 'Dries Vincent',
     imageUrl:
       'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    startDatetime: '2022-05-20T17:00',
-    endDatetime: '2022-05-20T18:30',
+    startDatetime: '2023-03-20T17:00',
+    endDatetime: '2023-03-20T18:30',
   },
   {
     id: 4,
     name: 'Leslie Alexander',
     imageUrl:
       'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    startDatetime: '2022-06-09T13:00',
-    endDatetime: '2022-06-09T14:30',
+    startDatetime: '2023-03-09T13:00',
+    endDatetime: '2023-03-09T14:30',
   },
   {
     id: 5,
     name: 'Michael Foster',
     imageUrl:
       'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    startDatetime: '2022-05-13T14:00',
-    endDatetime: '2022-05-13T14:30',
+    startDatetime: '2023-03-13T14:00',
+    endDatetime: '2023-03-13T14:30',
   },
 ]
 
@@ -72,7 +72,7 @@ export default function Example() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
-  
+
   let days = eachDayOfInterval({
     start: firstDayCurrentMonth,
     end: endOfMonth(firstDayCurrentMonth),
@@ -93,7 +93,7 @@ export default function Example() {
   )
 
   return (
-    <div className="pt-16">
+    <div className="pt-16 bg-sand rounded-2xl w-2/3 m-auto">
       <div className="max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
         <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
           <div className="md:pr-14">
