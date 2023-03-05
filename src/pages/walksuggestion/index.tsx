@@ -5,6 +5,7 @@ type FormData = {
     length: number;
     city: string;
     description: string;
+    image: string;
 };
 
 export default function WalkSuggestion() {
