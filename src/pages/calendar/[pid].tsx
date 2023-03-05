@@ -9,11 +9,12 @@ const Post = () => {
         fetch(`http://localhost:3000/meetings/${pid}`)
         .then(response => response.json())
         .then(data => setMeeting(data))
-    },[])
+    },[pid])
     console.log(meeting)
 
     return(
         <>
+            <p>Meeting with {meeting.name}</p>
         </>
     )
 }
