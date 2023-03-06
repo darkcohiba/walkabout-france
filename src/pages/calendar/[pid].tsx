@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { Hike } from '../../types'
 
 const Post = () => {
-    const [meeting, setMeeting] = useState([])
+    const [meeting, setMeeting] = useState<Hike[]>([])
+
     const router = useRouter()
     const { pid } = router.query
     useEffect(()=>{
