@@ -1,4 +1,4 @@
-export interface Hike{
+export type Hike = {
     id: number;
     name: string;
     description: string;
