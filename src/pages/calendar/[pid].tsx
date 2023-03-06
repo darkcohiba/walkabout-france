@@ -9,7 +9,7 @@ const Post = () => {
     const router = useRouter()
     const { pid } = router.query
     useEffect(()=>{
-        fetch(`http://localhost:3000/meetings/${pid}`)
+        fetch(`http://localhost:3000/hikes/${pid}`)
         .then(response => response.json())
         .then(data => {
             setMeeting(data)
